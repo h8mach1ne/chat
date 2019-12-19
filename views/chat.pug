@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Chat</title>
+        <link rel="stylesheet" href="/css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div id="chat-window" class="window">
+                <div id="chat">
+                    <div class="message-container recieved">
+                        <h3 class="username"> AutoUser </h3>
+                        <p class="message"> Welcome! </p>
+                        <p class="date"> 18 Aug 2001 </p>
+                    </div>
+                    each message in messages 
+                        div(class="message-container " + (message.username === client ? 'sent' : 'recieved'))
+                            <h3 class="username"> #{message.username} </h3>
+                            <p class="message"> #{message.message} </p>
+                            <p class="date"> #{message.date} </p>
+                </div>
+                <textarea id="message" maxlength="140" placeholder="Your message"></textarea>
+                <button id="send" class="button"> Send
+            </div>
+            <div id="users-window" class="window">
+                <h2>Users:</h2>
+                <ul id='users-list'>
+                    each user in users
+                        <li><h3 class="username">#{user ? user : 'Guest'}</h3></li>
+                </ul>
+                <a href='/archive'><button id="archive" class="button"> Archive </a>
+            </div>
+        </div>
+    </body>
+    <script src="/js/chat.js"></script>
+</html>
