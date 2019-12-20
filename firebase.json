@@ -6,9 +6,18 @@
     "public": "public",
     "ignore": [
       "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-      
+        "package.json",
+        "package-lock.json",
+        "node_modules/**",
+        ".firebaserc",
+        ".eslintrc.json",
+        ".prettierrc.json",
+        ".gitattributes",
+        ".gitignore",
+        ".travis.yml",
+        ".vscode/**",
+        ".firebase/**",
+        ".git/**"
     ]
   }
 }

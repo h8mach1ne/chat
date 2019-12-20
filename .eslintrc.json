@@ -5,31 +5,14 @@
         "es6": true,
         "node": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/eslint-recommended"
-    ],
+    "extends": "eslint:recommended",
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
-    "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": 2018
     },
-    "plugins": [
-        "@typescript-eslint"
-    ],
     "rules": {
-        "no-unused-vars": "off",
-        "no-undef": "off",
-        "indent": ["off", "tab"],
-        "no-tabs": "off",
-        "eqeqeq": "off",
-        "no-unmodified-loop-condition": "off",
-        "no-extend-native": "off",
-        "no-array-constructor": "off",
-        "semi": ["off", "always"],
-        "space-before-function-paren": "off"
     }
 }
