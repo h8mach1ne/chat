@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
+    "lint": "eslint --ignore-path .gitignore .",
     "deploy": "npx firebase deploy --token $FIREBASE_TOKEN"
   },
   "author": "",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "eslint": "^6.7.2",
+    "lint": "^0.7.0",
     "mocha": "^6.2.2",
     "prettier": "^1.19.1"
   }
