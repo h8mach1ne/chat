@@ -1,0 +1,29 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "standard"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-unused-vars": "off",
+        "no-undef": "off",
+        "indent": ["off", "tab"],
+        "no-tabs": "off",
+        "eqeqeq": "off",
+        "no-unmodified-loop-condition": "off",
+        "no-extend-native": "off",
+        "no-array-constructor": "off",
+        "semi": ["off", "always"],
+        "space-before-function-paren": "off"
+    }
+}
