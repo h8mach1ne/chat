@@ -3,7 +3,7 @@
 const mongoose = require('mongoose')
 const bcrypt = require('bcryptjs')
 
-const MessageSchema = new mongoose.Schema({
+const MessageMe = new mongoose.Schema({
     username: {
         type: String
     },
@@ -19,7 +19,7 @@ const MessageSchema = new mongoose.Schema({
     }
 })
 
-const UserSchema = new mongoose.Schema({
+const UserMe = new mongoose.Schema({
     username:{
         type: String,
         unique: true,
@@ -29,20 +29,20 @@ const UserSchema = new mongoose.Schema({
     }
 })
 
-MessageSchema.statics.archiveAfter = (message, time) => {   
+MessageMe.statics.archiveAfter = (message, time) => {   
     setTimeout(() => {
         Message.updateOne(message, { archived: true })
 }, time)
 }
 
-UserSchema.pre('save', function(next){
+UserMe.pre('save', function(next){
     bcrypt.hash(this.password, 5, (err, hash) =>{
         this.password = hash
         next()
     })
 })
 
-UserSchema.statics.validate = (user, password, callback) => {
+UserMe.statics.validate = (user, password, callback) => {
     bcrypt.compare(password, user.password, (err, success) => {
         if(success){
             callback(null, user)
@@ -53,7 +53,7 @@ UserSchema.statics.validate = (user, password, callback) => {
     })
 }
 
-const User = mongoose.model('User', UserSchema)
-const Message = mongoose.model('Message', MessageSchema)
+const User = mongoose.model('User', UserMe)
+const Message = mongoose.model('Message', MessageMe)
 
 module.exports = { Message: Message, User: User }

@@ -11,7 +11,7 @@ h2{
 }
 
 body{
-    background-color: #E5F8F5;
+    background-color: rgb(179, 127, 179);
     height: 100%;
     margin: 0;
     display: flex;
@@ -32,7 +32,7 @@ form{
 }
 
 form input {
-    background-color: #ADD3EA;
+    background-color: rgb(161, 122, 192);
     border: none;
     border-radius: 15px;
     height: 40px;
@@ -42,7 +42,7 @@ form input {
 }
 
 .window{
-    border: #94C1DD solid 1px;
+    border: rgb(161, 122, 192) solid 1px;
 }
 
 #chat{
@@ -65,7 +65,7 @@ form input {
 
 #chat::-webkit-scrollbar-thumb{
     border-radius: 5px;
-    background-color: #94C1DD;
+    background-color: rgb(161, 122, 192);
 }
 
 #chat-window{
@@ -74,12 +74,12 @@ form input {
     flex-direction: column;
     justify-content: flex-end;
     padding: 5px;
-    background-color: #C4DFF6;
+    background-color: rgb(154, 107, 192);
 }
 
 #users-window{
     width: 10%;
-    background-color: #ADD3EA;
+    background-color: rgb(161, 122, 192);
     display: flex;
     flex-direction: column;
 }
@@ -87,7 +87,7 @@ form input {
 #message{
     height: 10%;
     resize: none;
-    background-color: #ADD3EA   ;
+    background-color: rgb(161, 122, 192);
     border: none;
     border-radius: 10px;
     padding: 5px;
@@ -104,7 +104,7 @@ form input {
 }
 
 .recieved{
-    background-color: #ADD3EA;
+    background-color: rgb(161, 122, 192);
 }
 
 .username{
@@ -131,13 +131,13 @@ form input {
 
 .sent{
     align-self: flex-end;
-    background-color: #94C1DD;
+    background-color: rgb(179, 148, 205);
 }
 
 .button{
     margin-top: 5px;
     height: 5%;
-    background-color: #94C1DD;
+    background-color: rgb(179, 148, 205);
     border: none;
     border-radius: 10px;
     font-size: 18px;
