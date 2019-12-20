@@ -1,19 +1,25 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "commonjs": true,
+        "es6": true,
+        "node": true
     },
     "extends": [
-        "standard"
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended"
     ],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
+        "ecmaVersion": 2018
     },
+    "plugins": [
+        "@typescript-eslint"
+    ],
     "rules": {
         "no-unused-vars": "off",
         "no-undef": "off",
