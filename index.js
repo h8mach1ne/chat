@@ -24,7 +24,7 @@ app.use(bodyparser.urlencoded({
 
 
 //mongoose.connect('mongodb://localhost:27017/chat', {useNewUrlParser: true})
-mongoose.connect('mongodb+srv://vlad:212121121989gasp@cluster0-lo97k.mongodb.net/chat?retryWrites=true&w=majority', {useNewUrlParser: true})
+mongoose.connect('mongodb+srv://h8mach1ne:1romanticsmoke@cluster0-cv3bd.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true})
 const db = mongoose.connection
 
 app.use(session({

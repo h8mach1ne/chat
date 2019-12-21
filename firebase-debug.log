@@ -1,0 +1,25 @@
+[debug] [2019-12-20T10:38:10.050Z] ----------------------------------------------------------------------
+[debug] [2019-12-20T10:38:10.052Z] Command:       D:\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-12-20T10:38:10.053Z] CLI Version:   7.11.0
+[debug] [2019-12-20T10:38:10.053Z] Platform:      win32
+[debug] [2019-12-20T10:38:10.053Z] Node Version:  v12.13.1
+[debug] [2019-12-20T10:38:10.054Z] Time:          Fri Dec 20 2019 12:38:10 GMT+0200 (GMT+02:00)
+[debug] [2019-12-20T10:38:10.054Z] ----------------------------------------------------------------------
+[debug] [2019-12-20T10:38:10.054Z] 
+[debug] [2019-12-20T10:38:10.061Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-20T10:38:10.061Z] > authorizing via signed-in user
+[debug] [2019-12-20T10:38:10.061Z] [iam] checking project h8mach1nechat for permissions ["firebase.projects.get"]
+[debug] [2019-12-20T10:38:10.063Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/h8mach1nechat:testIamPermissions  
+
+[debug] [2019-12-20T10:38:11.262Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-20T10:38:11.264Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/h8mach1nechat  
+ 
+[debug] [2019-12-20T10:38:11.661Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\lab7'...
+[info] 
+[debug] [2019-12-20T10:38:11.686Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/h8mach1nechat/webApps/-/config  
+ 
+[debug] [2019-12-20T10:38:12.715Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
