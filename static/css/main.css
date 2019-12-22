@@ -11,7 +11,7 @@ h2{
 }
 
 body{
-    background-color: rgb(179, 127, 179);
+    background-color: white;
     height: 100%;
     margin: 0;
     display: flex;
@@ -26,23 +26,32 @@ body{
 }
 
 form{
-    height: fit-content;
-    align-self: center;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 form input {
-    background-color: rgb(161, 122, 192);
-    border: none;
-    border-radius: 15px;
-    height: 40px;
-    padding: 10px;
+    background-color: white;
+    margin-bottom: 5px;
+    outline: 0;
+    border: 2px solid red;
+    color: red;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px 10px;
     font-size: 16px;
-
 }
 
-.window{
-    border: rgb(161, 122, 192) solid 1px;
+button {
+    background-color:white;
+    margin-bottom: 5px;
+    outline: 0;
+    border: 2px solid red;
+    color: red;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 16px;
 }
 
 #chat{
@@ -74,20 +83,20 @@ form input {
     flex-direction: column;
     justify-content: flex-end;
     padding: 5px;
-    background-color: rgb(154, 107, 192);
+    background-color: #d9d9d9;
 }
 
 #users-window{
     width: 10%;
-    background-color: rgb(161, 122, 192);
     display: flex;
     flex-direction: column;
+    background-color: #d9d9d9;
+    border-left: 1px solid black;
 }
 
 #message{
     height: 10%;
     resize: none;
-    background-color: rgb(161, 122, 192);
     border: none;
     border-radius: 10px;
     padding: 5px;
@@ -101,10 +110,7 @@ form input {
     min-width: 45%;
     max-width: 75%;
     width: min-content;
-}
-
-.recieved{
-    background-color: rgb(161, 122, 192);
+    background-color: #fff;
 }
 
 .username{
@@ -131,13 +137,11 @@ form input {
 
 .sent{
     align-self: flex-end;
-    background-color: rgb(179, 148, 205);
 }
 
 .button{
     margin-top: 5px;
     height: 5%;
-    background-color: rgb(179, 148, 205);
     border: none;
     border-radius: 10px;
     font-size: 18px;
@@ -155,10 +159,7 @@ a #archive{
     color: black;
 }
 
-.description a{
-    color: rgb(179, 148, 205);
-}
-
 #archive{
     justify-self: flex-end;
+    background-color: #d9d9d9;
 }

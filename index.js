@@ -17,7 +17,7 @@ const app = express()
 const expressWs = require('express-ws')(app)
 
 app.use(express.static(path.join(__dirname, 'static')))
-app.use(bodyparser.json())
+app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ 
     extended: true
   }))
